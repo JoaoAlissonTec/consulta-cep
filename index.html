@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="endereco">
+            <div id="box-cep">
+                <label for="cep">CEP</label>
+                <div id="line">
+                    <input type="text" name="" id="cep" class="endereco" onkeypress="alertaDeleta()">
+                    <span id="alerta"></span>
+                    <input type="button" value="Consultar" id="consulta">
+                </div>
+            </div>
+            <div id="box-endereco">
+                <div>
+                    <p><label for="logradouro">Logradouro</label></p>
+                    <input type="text" id="logradouro" class="endereco">
+                </div>
+                <div>
+                    <p><label for="complemento">Complemento</label></p>
+                    <input type="text" id="complemento" class="endereco">
+                </div>
+                <div>
+                    <p><label for="bairro">Bairro</label></p>
+                    <input type="text" id="bairro" class="endereco">
+                </div>
+                <div>
+                    <p><label for="cidade">Cidade</label></p>
+                    <input type="text" id="cidade" class="endereco">
+                </div>
+                <div>
+                    <p><label for="uf">UF</label></p>
+                    <input type="text" id="uf" class="endereco">
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

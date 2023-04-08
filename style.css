@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    --primary-color: #048A81;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#endereco{
+    color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#endereco #box-cep{
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 0px 5%;
+}
+
+#endereco #box-cep input{
+    width: 100%;
+    border: 1px solid gainsboro;
+}
+
+#endereco #box-endereco{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+#alerta{
+    color: rgb(234, 1, 1);
+    font-size: 11pt;
+}
+
+#endereco #box-cep #line{
+    display: flex;
+    flex-direction: column;
+}
+
+#endereco #box-endereco input{
+    width: 100%;
+    border: 1px solid gainsboro;
+}
+
+#endereco #box-endereco input[type='text']:focus, #endereco #box-cep input[type='text']:focus{
+    border: 1px solid var(--primary-color);
+}
+
+#endereco #box-cep input[type='button']{
+    width: 30%;
+    margin-top: 20px;
+    height: 30px;
+    background-color: white;
+    color: var(--primary-color);
+    border: none;
+}
+
+#endereco #box-cep input[type='button']:hover{
+    cursor: pointer;
+}
+
+#endereco #box-endereco p{
+    margin-top: 10px;
+}
+
+.endereco{
+    outline: none;
+    padding: 5px;
+}
+
+@media (max-width: 700px){
+    #endereco{
+        flex-direction: column;
+    }
+    #endereco #box-cep{
+        width: 100%;
+        height: 30%;
+    }
+    #endereco #box-endereco{
+        width: 100%;
+        height: 70%;
+    }
+}
